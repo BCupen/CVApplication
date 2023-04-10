@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+:root {
+    padding: 0;
+    margin: 0;
+    --dark-blue: #154C79;
+    --light-blue: #2184CE;
+    --light-grey: #f5f5f5;
+    --bg-color: #363739;
+    --white: #ffffff;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Inter';
+    background-color: var(--bg-color);
+    overflow-x: hidden;
+}
+
+.app-container{
+    width: 100vw;
+    padding: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+}
+
+h1, h2, h3, p {
+    margin: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cv-container {
+    width: 38rem;
+    min-height: 49rem;
+    background-color: #ffffff;
+}
+
+.cv-header {
+    display: flex;
+    margin-bottom: 0.5rem;
+}
+
+.summary {
+    width: 25rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 0.5rem;
+}
+
+.summary > h2{
+    color: var(--dark-blue);
+    border-bottom: 0.2rem solid var(--dark-blue);
+}
+
+.summary > p {
+    font-size: 0.813rem;
+}
+
+textarea {
+    resize: none;
+    width: 22rem;
+    height: 6rem;
+}
+
+.personal-details{
+    background-color: var(--dark-blue);
+    padding: 0 0.5rem;
+    width: 15rem;
+    height: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.5rem;
+    color: var(--white);
+}
+
+
+.contact-info{
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+.contact-info > span{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.contact-info > span > p {
+    font-size: 0.813rem;
+}
+
+.cv-body {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    padding: 0.25rem;
+}
+
+.experience-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 0.25rem;
+    border-bottom: 0.2rem solid var(--dark-blue);
+}
+
+.experience-header > h2 {
+    color: var(--dark-blue);
+}
+
+.experience-header > svg {
+    width: 1.5rem;
+    height: 1.5rem;
+    display: block;
+    cursor: pointer;
+}
+
+.experience-header > svg > path {
+    fill: var(--dark-blue);
+}
+
+
+
