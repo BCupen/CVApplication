@@ -28,7 +28,7 @@ body {
     gap: 3rem;
 }
 
-h1, h2, h3, p {
+h1, h2, h3, p, h5,ul {
     margin: 0;
 }
 
@@ -114,22 +114,105 @@ textarea {
     justify-content: space-between;
     padding: 0 0.25rem;
     border-bottom: 0.2rem solid var(--dark-blue);
+    margin-bottom: 0.25rem;
 }
 
 .experience-header > h2 {
     color: var(--dark-blue);
 }
 
-.experience-header > svg {
+.experience-header > svg, .ec-header > svg {
     width: 1.5rem;
     height: 1.5rem;
     display: block;
     cursor: pointer;
 }
 
-.experience-header > svg > path {
+.experience-component {
+    padding: 0.5rem 0.25rem;
+    background-color: var(--light-grey);
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.ec-header > svg {
+    width: 1.25rem;
+    height: 1.25rem;
+}
+
+.experience-header > svg > path, .ec-header > svg > path, .ec-location > svg > path, .ec-period > svg > path {
     fill: var(--dark-blue);
 }
+
+.ec-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--dark-blue);
+}
+
+.ec-location-period, .ec-location, .ec-period {
+    display: flex;
+    align-items: center;
+}
+
+.ec-location-period {
+    gap: 1rem;
+}
+
+.ec-location, .ec-period {
+    color: var(--light-blue);
+    gap: 0.5rem;
+}
+
+.ec-period > div {
+    display: flex;
+    gap: 0.125rem;
+}
+
+.ec-description {
+    display: flex;
+    flex-direction: column;
+    gap: 0.375rem;
+}
+
+.ec-description > p {
+    font-size: 0.813rem;
+}
+
+textarea#description {
+    width: 18rem;
+}
+
+.responsibilities > span {
+    display: flex;
+    align-items: center;
+    gap: 0.375rem;
+    color: var(--light-blue);
+    font-size: 1.125rem;
+}
+
+.responsibilities > ul > li{
+    color:var(--dark-blue);
+    font-size: 0.813rem;
+}
+
+.resp {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    color: black;
+}
+
+.resp >svg > path {
+    fill: var(--dark-blue);
+}
+
+.responsibilities > span > svg, .resp > svg {
+    cursor: pointer;
+}
+
 
 
 
