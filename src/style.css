@@ -106,9 +106,10 @@ textarea {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto;
     padding: 0.25rem;
+    grid-column-gap: 0.25rem;
 }
 
-.experience-header {
+.experience-header, .education-header {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -117,11 +118,11 @@ textarea {
     margin-bottom: 0.25rem;
 }
 
-.experience-header > h2 {
+.experience-header > h2, .education-header > h2 {
     color: var(--dark-blue);
 }
 
-.experience-header > svg, .ec-header > svg {
+.experience-header > svg, .ec-header > svg, .education-header > svg {
     width: 1.5rem;
     height: 1.5rem;
     display: block;
@@ -136,12 +137,13 @@ textarea {
     gap: 0.5rem;
 }
 
-.ec-header > svg {
+.ec-header > svg, .educomp-header > svg {
     width: 1.25rem;
     height: 1.25rem;
 }
 
-.experience-header > svg > path, .ec-header > svg > path, .ec-location > svg > path, .ec-period > svg > path {
+.experience-header > svg > path, .ec-header > svg > path, .ec-location > svg > path, .ec-period > svg > path,
+.education-header > svg > path, .educomp-institute > svg > path, .educomp-period > svg > path {
     fill: var(--dark-blue);
 }
 
@@ -209,9 +211,34 @@ textarea#description {
     fill: var(--dark-blue);
 }
 
-.responsibilities > span > svg, .resp > svg {
+.responsibilities > span > svg, .resp > svg, .educomp-header > svg {
     cursor: pointer;
 }
+
+.education-component{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    background-color: var(--light-grey);
+    padding: 0.5rem 0.25rem;
+}
+
+.educomp-header, .educomp-institute, .educomp-period, .educomp-period > span {
+    display: flex;
+    align-items: center;
+    gap:0.25rem;
+}
+
+.educomp-header {
+    color: var(--dark-blue);
+    justify-content: space-between;
+}
+
+.educomp-institute, .educomp-period{
+    color: var(--light-blue);
+}
+
+
 
 
 

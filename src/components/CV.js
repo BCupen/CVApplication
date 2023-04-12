@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import PersonalDetails from "./PersonalDetails";
 import Summary from "./Summary";
 import Experience from "./Experience";
+import Education from "./Education";
 
 class CV extends Component{
 
@@ -16,6 +17,7 @@ class CV extends Component{
                 </div>
                 <div className="cv-body">
                     <Experience editMode={editMode}/>
+                    <Education editMode={editMode}/>
                 </div>
             </div>
         );
